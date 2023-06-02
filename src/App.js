@@ -1,9 +1,9 @@
-import './App.css';
+import Container from './components/pages/Container/Container';
 
 function App() {
   return (
     <div className="App">
-      first
+      <Container />
     </div>
   );
 }
