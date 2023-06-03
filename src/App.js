@@ -1,11 +1,7 @@
-import Container from './components/pages/Container/Container';
+import AppContainer from './components/AppContainer/AppContainer';
 
 function App() {
-  return (
-    <div className="App">
-      <Container />
-    </div>
-  );
+  return (<AppContainer />);
 }
 
 export default App;
