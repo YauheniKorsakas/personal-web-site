@@ -1,0 +1,98 @@
+@import '../../styles/variables.scss';
+
+$current-top: 2%;
+$godel-top: 30%;
+$sqilsoft-top: 60%;
+$beginning-top: 90%;
+
+.Experience {
+  display: flex;
+  flex-direction: row;
+
+  .TimeTravel {
+    position: relative;
+    width: 2rem;
+
+    .Sidebar {
+      height: 100%;
+      width: .2rem;
+      background-color: $secondary-color-50;
+    }
+
+    .Circle {
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background-color: $secondary-color-900;
+      left: -0.35rem;
+
+      &::after {
+        position: relative;
+        top: -.3rem;
+        left: 2rem;
+        color: $secondary-color-700;
+        font-size: 1.2rem;
+      }
+    }
+
+    .CurrentCircle {
+      top: $current-top;
+
+      &::after {
+        content: '2023';
+      }
+    }
+
+    .GodelCircle {
+      top: $godel-top;
+
+      &::after {
+        content: '2022';
+      }
+    }
+
+    .SQILSoftCircle {
+      top: $sqilsoft-top;
+
+      &::after {
+        content: '2020';
+      }
+    }
+
+    .BeginningCircle {
+      top: $beginning-top;
+
+      &::after {
+        content: '2017';
+      }
+    }
+  }
+
+  .Description {
+    position: relative;
+    flex: 1;
+    margin-left: 5rem;
+    font-size: 1.3rem;
+
+    section {
+      position: absolute;
+    }
+
+    .BeginningDescription {
+      top: calc($beginning-top - .5rem);
+    }
+
+    .SQILSoftDescription {
+      top: calc($sqilsoft-top - .5rem);
+    }
+
+    .GodelDescription {
+      top: calc($godel-top - .5rem);
+    }
+
+    .CurrentDescription {
+      top: calc($current-top - .5rem);
+    }
+  }
+}
