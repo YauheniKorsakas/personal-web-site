@@ -1,12 +1,85 @@
 @import '../../styles/variables.scss';
 
-.AppContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+$container-distance: 2rem;
 
-  padding: 10rem;
+.AppContainer {
+  position: relative;
+  padding: 10rem 20rem;
   background: linear-gradient(to bottom, $primary-color-900, $primary-color-800);
-  color: white;
+  color: $primary-color-50;
   height: 100%;
+
+  .CenterContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: $container-distance;
+    padding: $container-distance;
+    overflow: hidden;
+    background-color: transparent;
+    border: 2px solid $primary-color-800;
+    height: 72vh; // TODO: fix height according to full height of container
+
+    // div {
+    //   border: 1px solid red;
+    // }
+  }
+
+  .TopContainer, .BottomContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .TopContainer {
+    height: 30%;
+  }
+
+  .BottomContainer {
+    height: 70%;
+  }
+
+  .Details {
+    flex: 2
+  }
+
+  .About {
+    flex: 3;
+    margin: 0 $container-distance;
+  }
+
+  .Contacts {
+    flex: 1;
+  }
+
+  .Skills {
+    flex: 1;
+    margin-right: $container-distance;
+  }
+
+  .Experience {
+    flex: 1;
+  }
+
+  // .Details {
+  //   overflow: hidden;
+  // }
+
+  // .Details {
+  //   grid-row: 1;
+  //   grid-column: span 2;
+  // }
+
+  // .About {
+  //   grid-column: span 3;
+  // }
+
+  // .Skills {
+  //   grid-row: span 2;
+  //   grid-column: span 3;
+  // }
+
+  // .Experience {
+  //   grid-row: span 2;
+  //   grid-column: span 3;
+  // }
 }
