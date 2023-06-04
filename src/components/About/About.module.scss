@@ -1,8 +1,9 @@
 @import '../../styles/variables.scss';
 
 .About {
+  display: flex;
   color: $primary-color-50;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 
   p {
     text-indent: 30px;
