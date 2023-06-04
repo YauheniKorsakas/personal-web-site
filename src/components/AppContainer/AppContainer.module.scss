@@ -19,10 +19,6 @@ $container-distance: 2rem;
     background-color: transparent;
     border: 2px solid $primary-color-800;
     height: 72vh; // TODO: fix height according to full height of container
-
-    // div {
-    //   border: 1px solid red;
-    // }
   }
 
   .TopContainer, .BottomContainer {
@@ -52,12 +48,12 @@ $container-distance: 2rem;
   }
 
   .Skills {
-    flex: 1;
+    flex: 3;
     margin-right: $container-distance;
   }
 
   .Experience {
-    flex: 1;
+    flex: 4;
   }
 
   // .Details {

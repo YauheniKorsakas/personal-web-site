@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+.Skills {
+  display: flex;
+  flex-direction: row;
+
+  .SkillsContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    justify-content: space-evenly;
+  }
+
+  .Skill {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+      flex: 1;
+      color: $primary-color-50;
+      font-size: 1.5rem;
+      margin-right: 1rem;
+    }
+
+    .ProgressBar {
+      flex: 1;
+    }
+  }
+}

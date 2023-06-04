@@ -3,6 +3,7 @@ import styles from "./AppContainer.module.scss";
 import Container from "../shared/Container/Container";
 import Contacts from "../Contacts/Contacts";
 import About from "../About/About";
+import Skills from "../Skills/Skills";
 
 const AppContainer = () => {
   return (
@@ -14,7 +15,7 @@ const AppContainer = () => {
           <Contacts className={styles.Contacts} />
         </div>
         <div className={styles.BottomContainer}>
-          <div className={styles.Skills}>Skills</div>
+          <Skills className={styles.Skills}>Skills</Skills>
           <div className={styles.Experience}>Experience</div>
         </div>
       </Container>
