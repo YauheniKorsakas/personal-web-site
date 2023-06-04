@@ -7,6 +7,7 @@ const ProgressBar = ({ completed = 0, className = ''}) => {
     <div className={classNames(styles.Container, className)}>
       <div
         className={styles.Filled}
+        style={{width: `${completed}%`}}
         data-completed-percentage={completed}
       ></div>
     </div>
