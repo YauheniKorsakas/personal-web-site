@@ -4,7 +4,7 @@ $container-distance: 2rem;
 
 .AppContainer {
   position: relative;
-  padding: 10rem 20rem;
+  padding: 10rem 18rem;
   background: linear-gradient(to bottom, $primary-color-900, $primary-color-800);
   color: $primary-color-50;
   height: 100%;
@@ -17,7 +17,7 @@ $container-distance: 2rem;
     padding: $container-distance;
     overflow: hidden;
     background-color: transparent;
-    height: 72vh; // TODO: fix height according to full height of container
+    height: 80vh; // TODO: fix height according to full height of container
   }
 
   .TopContainer, .BottomContainer {

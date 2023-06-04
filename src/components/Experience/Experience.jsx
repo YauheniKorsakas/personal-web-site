@@ -26,7 +26,8 @@ const Experience = ({ className = '' }) => {
         <section className={styles.GodelDescription}>
           My second job. Having that great experience that I had got in SQILSoft, I moved towards Godel Technologies.
           This company is much bigger than SQILSoft and here I learned how to participate in developing/supporting
-          codebase in context of advanced approaches. Also, I moved from Grodno to Vilnius by the summer of 2022.
+          codebase in context of advanced approaches. Had to work with RabbitMQ, Microservices and legacy code support.
+           Also, I moved from Grodno to Vilnius by the summer of 2022.
         </section>
         <section className={styles.CurrentDescription}>
           I am still working for Godel, but in Vilnius, gathering new experiences and constantly learning new stuff to get better
