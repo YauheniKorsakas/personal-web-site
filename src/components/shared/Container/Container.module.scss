@@ -1,0 +1,7 @@
+@import '../../../styles/variables.scss';
+
+.Container {
+  background-color: $primary-color-800;
+  border-radius: $container-border-radius;
+  padding: .5rem;
+}

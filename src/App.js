@@ -1,11 +1,7 @@
-import './App.css';
+import AppContainer from './components/AppContainer/AppContainer';
 
 function App() {
-  return (
-    <div className="App">
-      first
-    </div>
-  );
+  return (<AppContainer />);
 }
 
 export default App;

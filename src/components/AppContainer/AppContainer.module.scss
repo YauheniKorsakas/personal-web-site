@@ -1,0 +1,12 @@
+@import '../../styles/variables.scss';
+
+.AppContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10rem;
+  background: linear-gradient(to bottom, $primary-color-900, $primary-color-800);
+  color: white;
+  height: 100%;
+}

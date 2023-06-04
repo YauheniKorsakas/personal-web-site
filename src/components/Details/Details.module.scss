@@ -1,0 +1,56 @@
+@import '../../styles/variables.scss';
+
+.Details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem !important;
+  padding-left: 3rem !important;
+  width: auto;
+
+  img {
+    width: 15rem;
+    height: 18rem;
+    border-radius: $container-border-radius;
+    margin: 3rem 0;
+    margin-bottom: 4rem;
+    box-shadow: 0 0 10px $secondary-color-700;
+  }
+
+  .FullName {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  .Title {
+    font-size: 2em;
+
+    .WebDeveloperContainer {
+      color: $secondary-color-800;
+      font-weight: 600;
+    }
+  }
+
+  .ContactInfo {
+    display: flex;
+    flex-direction: column;
+
+    .Title {
+      font-size: 2rem;
+      font-weight: 100;
+      margin: 0;
+      margin-bottom: 0.5rem;
+      color: $secondary-color-800;
+    }
+
+    a {
+      font-size: 2rem;
+      color: $secondary-color-50;
+      text-decoration: none;
+
+      &:hover {
+        color: $secondary-color-800;
+      }
+    }
+  }
+}
