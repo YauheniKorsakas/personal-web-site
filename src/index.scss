@@ -12,12 +12,20 @@ html, body {
   padding: 0;
   overflow: hidden;
 
-  @include media-query($breakpoint: $breakpoint-md) {
+  @include media-query($breakpoint-xxxlg) {
+    font-size: 10px;
+  }
+
+  @include media-query($breakpoint: $breakpoint-xxlg) {
+    font-size: 9px;
+  }
+
+  @include media-query($breakpoint: $breakpoint-xlg) {
     font-size: 8px;
   }
 
-  @include media-query($breakpoint: $breakpoint-lt) {
-    font-size: 6px;
+  @include media-query($breakpoint: $breakpoint-lg) {
+    font-size: 7px;
   }
 }
 
