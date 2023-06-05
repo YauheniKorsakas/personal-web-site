@@ -10,6 +10,11 @@ const SkillsSource = [
     percentage: 80
   },
   {
+    id: 12,
+    label: 'T-SQL',
+    percentage: 40
+  },
+  {
     id: 3,
     label: 'NUnit/MSTest',
     percentage: 90
@@ -51,9 +56,14 @@ const SkillsSource = [
   },
   {
     id: 11,
-    label: 'Microservice patterns',
-    percentage: 80
+    label: 'Dev Patterns',
+    percentage: 90
   },
+  {
+    id: 13,
+    label: 'Microservices Patterns',
+    percentage: 50
+  }
 ];
 
 export default SkillsSource;
