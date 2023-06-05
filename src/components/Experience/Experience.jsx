@@ -19,7 +19,7 @@ const Experience = ({ className = '' }) => {
         </section>
         <section className={styles.SQILSoftDescription}>
           My first job. Here over 3 years I learned a lot of stuff regarding IT. How to work with team,
-          get familiar with new techstack fast. Did full stack development of web apps using .net and angular.
+          get familiar with new techstack fast. Did full stack development of web apps using .NET and Angular.
           Namely, I was involved in investigating requirements, establishing actual code base, figuring out best approaches to solve
           a great banch of different tasks.
         </section>
