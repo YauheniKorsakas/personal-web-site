@@ -1,9 +1,9 @@
 import classNames from "classnames";
 
-import styles from './Skills.module.scss';
 import Container from '../shared/Container/Container';
 import ProgressBar from '../shared/ProgressBar/ProgressBar';
 import SkillsSource from '../../data/SkillsSource';
+import styles from './Skills.module.scss';
 
 const Skill = ({ completed = 0, label = ''}) => {
   return (

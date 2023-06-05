@@ -1,7 +1,8 @@
-import styles from './Details.module.scss';
+import classNames from 'classnames';
+
 import Container from '../shared/Container/Container';
 import mainImageSrc from '../../materials/main.jpg';
-import classNames from 'classnames';
+import styles from './Details.module.scss';
 
 const Details = ({className = ''}) => {
 
