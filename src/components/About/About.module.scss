@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+.About {
+  display: flex;
+  color: $primary-color-50;
+  font-size: 1.8rem;
+
+  p {
+    text-indent: 30px;
+    margin: 0;
+
+    span {
+      color: $secondary-color-800;
+      font-weight: 800;
+    }
+  }
+}

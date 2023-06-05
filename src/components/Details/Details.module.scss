@@ -2,55 +2,36 @@
 
 .Details {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem !important;
-  padding-left: 3rem !important;
-  width: auto;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
 
   img {
-    width: 15rem;
-    height: 18rem;
+    width: 10rem;
+    height: 12rem;
     border-radius: $container-border-radius;
-    margin: 3rem 0;
-    margin-bottom: 4rem;
     box-shadow: 0 0 10px $secondary-color-700;
   }
 
-  .FullName {
-    font-size: 3rem;
-    font-weight: 600;
-  }
-
-  .Title {
-    font-size: 2em;
-
-    .WebDeveloperContainer {
-      color: $secondary-color-800;
-      font-weight: 600;
-    }
-  }
-
-  .ContactInfo {
+  .Titles {
     display: flex;
     flex-direction: column;
+    margin-left: 2rem;
 
-    .Title {
-      font-size: 2rem;
-      font-weight: 100;
-      margin: 0;
-      margin-bottom: 0.5rem;
-      color: $secondary-color-800;
+    .FullName {
+      font-size: 2.2rem;
+      font-weight: 600;
     }
-
-    a {
-      font-size: 2rem;
-      color: $secondary-color-50;
-      text-decoration: none;
-
-      &:hover {
+  
+    .Title {
+      font-size: 1.5rem;
+  
+      .WebDeveloperContainer {
         color: $secondary-color-800;
+        font-weight: 600;
       }
     }
   }
 }
+
