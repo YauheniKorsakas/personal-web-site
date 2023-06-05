@@ -26,11 +26,11 @@ $container-distance: 2rem;
   }
 
   .TopContainer {
-    height: 25%;
+    min-height: calc(25%);
   }
 
   .BottomContainer {
-    height: 75%;
+    min-height: calc(75%);
 
     @include media-query($breakpoint-xlg) {
       flex-direction: column;
@@ -80,19 +80,14 @@ $container-distance: 2rem;
     padding: 8rem 13rem 4rem;
   }
 
-  @include media-query($breakpoint: $breakpoint-lg) {
-    padding: 6rem 7rem 2rem;
+  @include media-query($breakpoint: $breakpoint-xxlg) {
+    padding: 7rem 12rem 3rem;
   }
 
-  @include media-query($breakpoint-md) {
-    padding: 2rem 5rem 1rem;
-
-    .AppContainer {
-      overflow: scroll;
-    }
-
-    .BottomContainer {
-    }
+  @include media-query($breakpoint: $breakpoint-lg) {
+    min-height: 100vh;
+    padding: 6rem 7rem 2rem;
+    overflow-y: auto;
 
     .TopContainer {
       flex-direction: column;
@@ -110,7 +105,14 @@ $container-distance: 2rem;
         };
       }
     }
+  }
 
+  @include media-query($breakpoint-md) {
+    padding: 2rem 5rem 2rem;
+
+    .AppContainer {
+      overflow-y: scroll;
+    }
   }
 
   @include media-query($breakpoint-lt) {
