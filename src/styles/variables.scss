@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap');
 $primary-color-900: #1c1a1a;
 $primary-color-800: #3d3a3a;
 $primary-color-700: #5b5858;
@@ -11,6 +11,7 @@ $primary-color-200: #ebe8e8;
 $primary-color-100: #f5f1f1;
 $primary-color-50: #fcf8f8;
 
+$template-color: #472b02;
 $secondary-color-900: #fd8a00;
 $secondary-color-800: #feb500;
 $secondary-color-700: #fdcd12;
@@ -23,3 +24,9 @@ $secondary-color-100: #fbfcc3;
 $secondary-color-50: #feffe7;
 
 $container-border-radius: 10px;
+
+$breakpoint-xxlg: 1200px;
+$breakpoint-xlg: 1024px;
+$breakpoint-lg: 992px;
+$breakpoint-md: 768px;
+$breakpoint-lt: 576px;
