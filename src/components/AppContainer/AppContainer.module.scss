@@ -7,6 +7,7 @@ $container-distance: 2rem;
   position: relative;
   padding: 12rem 20rem 8rem;
   color: $primary-color-50;
+  background-color: $secondary-color-50;
   height: 100vh;
 
   .CenterContainer {
@@ -33,47 +34,33 @@ $container-distance: 2rem;
   }
 
   .Details {
-    flex: 2
+    flex: 2;
   }
 
   .About {
     flex: 3;
     margin: 0 $container-distance;
+    
+    @include set-animation(.3s);
   }
 
   .Contacts {
     flex: 1;
+
+    @include set-animation(.5s);
   }
 
   .Skills {
     flex: 3;
     margin-right: $container-distance;
+
+    @include set-animation(.7s);
+
   }
 
   .Experience {
     flex: 4;
+    
+    @include set-animation(.9s);
   }
-
-  // .Details {
-  //   overflow: hidden;
-  // }
-
-  // .Details {
-  //   grid-row: 1;
-  //   grid-column: span 2;
-  // }
-
-  // .About {
-  //   grid-column: span 3;
-  // }
-
-  // .Skills {
-  //   grid-row: span 2;
-  //   grid-column: span 3;
-  // }
-
-  // .Experience {
-  //   grid-row: span 2;
-  //   grid-column: span 3;
-  // }
 }

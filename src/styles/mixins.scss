@@ -5,3 +5,9 @@
     @content
   }
 }
+
+@mixin set-animation($animation-delay) {
+  animate-delay: $animation-delay;
+  -webkit-animation-delay: $animation-delay;
+  -moz-animation-delay: $animation-delay;
+}
