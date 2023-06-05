@@ -1,8 +1,29 @@
 @import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
 
 .Container {
   background-color: $primary-color-900;
   border-radius: $container-border-radius;
   padding: 2rem;
   height: 100%;
+
+  @include media-query($breakpoint-xxxlg) {
+    padding: 1.7rem;
+  }
+
+  @include media-query($breakpoint: $breakpoint-xxlg) {
+    padding: 1.5rem;
+  }
+
+  @include media-query($breakpoint: $breakpoint-xlg) {
+    padding: 1.3rem;
+  }
+
+  @include media-query($breakpoint: $breakpoint-md) {
+    padding: 1.1rem;
+  }
+
+  @include media-query($breakpoint-lt) {
+    padding: 1rem;
+  }
 }

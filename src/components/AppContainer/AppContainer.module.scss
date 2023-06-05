@@ -5,7 +5,7 @@ $container-distance: 2rem;
 
 .AppContainer {
   position: relative;
-  padding: 12rem 20rem 8rem;
+  padding: 10rem 20rem 8rem;
   color: $primary-color-50;
   background-color: $secondary-color-50;
   height: 100vh;
@@ -26,11 +26,15 @@ $container-distance: 2rem;
   }
 
   .TopContainer {
-    height: 30%;
+    height: 25%;
   }
 
   .BottomContainer {
-    height: 70%;
+    height: 75%;
+
+    @include media-query($breakpoint-xlg) {
+      flex-direction: column;
+    }
   }
 
   .Details {
@@ -56,11 +60,67 @@ $container-distance: 2rem;
 
     @include set-animation(.7s);
 
+    @include media-query($breakpoint-xlg) {
+      margin-right: 0;
+      margin-bottom: $container-distance;
+    }
   }
 
   .Experience {
     flex: 4;
-    
+
     @include set-animation(.9s);
+  }
+
+  @include media-query($breakpoint-xxxlg) {
+    padding: 10rem 15rem 6rem;
+  }
+
+  @include media-query($breakpoint: $breakpoint-xxlg) {
+    padding: 8rem 13rem 4rem;
+  }
+
+  @include media-query($breakpoint: $breakpoint-lg) {
+    padding: 6rem 7rem 2rem;
+  }
+
+  @include media-query($breakpoint-md) {
+    padding: 2rem 5rem 1rem;
+
+    .AppContainer {
+      overflow: scroll;
+    }
+
+    .BottomContainer {
+    }
+
+    .TopContainer {
+      flex-direction: column;
+    
+      .Details, .About, .Contacts {
+        margin: 0;
+        margin-bottom: $container-distance;
+      }
+
+      .Details {
+        img {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+        };
+      }
+    }
+
+  }
+
+  @include media-query($breakpoint-lt) {
+    padding: 1rem 2rem .5rem;
+    
+    .TopContainer {
+      .Details, .About, .Contacts {
+        margin: 0;
+        margin-bottom: .5rem;
+      }
+    }
   }
 }

@@ -1,6 +1,6 @@
 @import './variables.scss';
 
-@mixin media-query($breakpoint: $breakpoint-md) {
+@mixin media-query($breakpoint) {
   @media only screen and (max-width: $breakpoint) {
     @content
   }
