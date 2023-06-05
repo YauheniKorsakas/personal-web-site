@@ -1,3 +1,6 @@
+import 'animate.css';
+import classNames from 'classnames';
+
 import About from "../About/About";
 import Contacts from "../Contacts/Contacts";
 import Container from "../shared/Container/Container";
@@ -7,17 +10,19 @@ import Skills from "../Skills/Skills";
 import styles from "./AppContainer.module.scss";
 
 const AppContainer = () => {
+  const animationClass = 'animate__animated animate__fadeInUp';
+
   return (
     <div className={styles.AppContainer}>
       <Container className={styles.CenterContainer}>
         <div className={styles.TopContainer}>
-          <Details className={styles.Details} />
-          <About className={styles.About}>About</About>
-          <Contacts className={styles.Contacts} />
+          <Details className={classNames(styles.Details, animationClass)} />
+          <About className={classNames(styles.About, animationClass)}>About</About>
+          <Contacts className={classNames(styles.Contacts, animationClass)} />
         </div>
         <div className={styles.BottomContainer}>
-          <Skills className={styles.Skills}>Skills</Skills>
-          <Experience className={styles.Experience}>Experience</Experience>
+          <Skills className={classNames(styles.Skills, animationClass)}>Skills</Skills>
+          <Experience className={classNames(styles.Experience, animationClass)}>Experience</Experience>
         </div>
       </Container>
     </div>
