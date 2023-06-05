@@ -19,7 +19,7 @@ const Contacts = ({ className = '' }) => {
         <a href={"mailto:yauheni.korsakas@gmail.com"}>
           <AiFillGoogleCircle />
         </a>
-        <a href={"http://localhost:3000/skype:live:yauheni.korsakas?chat"}>
+        <a href={"skype:live:yauheni.korsakas?chat"}>
           <AiFillSkype />
         </a>
       </section>
