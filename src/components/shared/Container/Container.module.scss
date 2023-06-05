@@ -19,11 +19,15 @@
     padding: 1.3rem;
   }
 
-  @include media-query($breakpoint: $breakpoint-md) {
+  @include media-query($breakpoint: $breakpoint-lg) {
     padding: 1.1rem;
   }
 
+  @include media-query($breakpoint: $breakpoint-md) {
+    padding: 0.9rem;
+  }
+
   @include media-query($breakpoint-lt) {
-    padding: 1rem;
+    padding: 0.9rem;
   }
 }
